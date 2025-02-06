@@ -11,6 +11,7 @@ import { MyAppointment } from './pages/MyAppointment'
 import { Appointment } from './pages/Appointment'
 import { Navbar } from './components/Navbar'
 import { About } from './pages/About'
+import { Footer } from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,6 +31,7 @@ function App() {
         <Route path='/my-appointments' element={<MyAppointment></MyAppointment>}></Route>
         <Route path='/appointment/:dId' element={<Appointment></Appointment>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
     </>
   )
