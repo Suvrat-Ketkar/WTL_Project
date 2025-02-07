@@ -12,6 +12,7 @@ import { Appointment } from './pages/Appointment'
 import { Navbar } from './components/Navbar'
 import { About } from './pages/About'
 import { Footer } from './components/Footer'
+import { SignUp } from './pages/SignUp'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,6 +31,8 @@ function App() {
         <Route path='/my-profile' element={<Myprofile></Myprofile>}></Route>
         <Route path='/my-appointments' element={<MyAppointment></MyAppointment>}></Route>
         <Route path='/appointment/:dId' element={<Appointment></Appointment>}></Route>
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
       <Footer></Footer>
     </div>
